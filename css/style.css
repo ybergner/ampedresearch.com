@@ -39,13 +39,16 @@ footer {
 }
 
 body {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: "Gill Sans", sans-serif;
     color: #000000;
 
 }
+
+
 div {
     background-color: rgba(0, 0, 0, 0);
 }
+
 a {
     text-decoration: none;
 }
@@ -75,22 +78,48 @@ header img{
 
 }
 
+#profilepage{
+    height: 600px;
+    margin-top: 75px;
+    background-color: white;
+}
+
+#projectspage{
+  height: 1100px;
+  background-color:rgba(255,125,0,0.8);
+}
+
+#peoplepage{
+  height: 700px;
+  background-color:rgba(255,125,0,0.6);
+}
+
+#publicationspage{
+  height: 1000px;
+  background-color:rgba(255,125,0,0.4);
+}
+
+
+
+
 h1{
     text-align: center;
     font-size: 3em;
-    margin: 0;
+    margin:0;
+    font-weight: normal;
 }
 
-h1.about {
-    text-align: center;
-    font-size: 1.8em;
+h1.titles {
+padding-top: 40px;
+/* margin-top: 40px;*/
+
 }
 
 h2 {
     text-align: center;
-    font-weight: bold;
-    font-size: 2.5em;
-    color: white;
+    font-weight: normal;
+    font-size: 1.8em;
+    color: black;
     margin-top: 17px;
 }
 
@@ -100,32 +129,28 @@ h2.titles {
   font-size: 1.5em;
   font-weight: normal;
 }
-/*
-h2.profile {
+
+.profile{
+  width: 38%;
+  margin-right: 2%;
+  margin-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+  float: left;
+}
+
+.text{
+  float: right;
+  width: 48%;
+  margin-left: 4%;
+  margin-right: 6%;
+  position: center;
+/*  display: inline-block;*/
   color:black;
+
   font-size: 1.5em;
   font-weight: normal;
-  width: 55%;
-  padding-right: 2%;
-  padding-left: 2%;
-  display: inline-block;
-  margin-bottom: 0%;
-  margin-top: 0;
-}*/
-
-img.profile2 {
-  width: 58%;
-  padding-right: 2%;
-  padding-left: 2%;
-  display: inline-block;
-  margin-bottom: 0%;
-}
-img.profile{
-  width: 38%;
-  padding-right: 2%;
-  padding-left: 2%;
-  display: inline-block;
-  margin-bottom: 0%;
+  margin-top: 6%;
 }
 
 h2.description {
@@ -225,11 +250,11 @@ footer h2.titles{
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 25%;
-    background-color: rgba(246, 135, 40, 1.0);
+    background-color: rgba(255, 90, 40, 1.0);
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 0.6s ease;
     font-weight:lighter;
 }
 
@@ -514,6 +539,7 @@ nav ul li:hover > ul li:hover {
 
     }
 
+
   .col_4{
   display: inline-block;
   width:45%;
@@ -707,7 +733,7 @@ img.profile{
   text-align: center;
 }
 
-  nav ul a {
+/*  nav ul a {
     display: block;
     color: #222;
     text-decoration: none;
@@ -717,16 +743,62 @@ img.profile{
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 20px;
-}
+}*/
 
 .logo{
-  width: 200%;
-  height: 200%;
+  width: 250%;
+
+/*  height: 200%;*/
   position: absolute;
   display: inline;
 
 }
 
+/*nav.navbar{
+  display: inline-block;
+  width: 80%
+  padding-right: 10%;
+  padding-top: 10%;
+    z-index: 0;
+}
+
+/*responsive nav bar*/
+/*nav ul {
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+    margin:0;
+    line-height: 80px;
+    z-index: 1;
+}*/
+
+nav{
+  float:left;
+  margin-top: 90px;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 0px;
+
+}
+
+/*responsive nav bar*/
+nav ul {
+    list-style-type: none;
+    position: relative;
+    z-index: 1;
+}
+
+/* make the a tags display like block elements to take up full space of container li*/
+nav ul a {
+    display: inline block;
+    color: #222;
+    text-decoration: none;
+/*    line-height: 10px;*/
+/*    padding: 15px;
+*/    font-size:1em;
+    padding-right: 1px;
+}
 footer a{
     color: black;
     position: absolute;
@@ -737,20 +809,69 @@ footer a{
     padding-left: 0px;
 }
 
-img.profile2 {
+/*img.profile2 {
   width: 96%;
   padding-right: 2%;
   padding-left: 2%;
   display: inline-block;
   margin-bottom: 0%;
-}
-img.profile{
-  width: 100%;
-  padding-right: 20%;
-  padding-left: 20%;
+}*/
+  .profile{
+  width: 90%;
+  padding-right: 5%;
+  padding-left: 5%;
   display: inline-block;
   margin-bottom: 0%;
+  margin-top: 0%;
 }
+
+.text{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: center;
+  display: inline-block;
+  color:black;
+
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 6%;
+}
+
+.text2{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: center;
+  display: inline-block;
+  color:black;
+
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 6%;
+}
+
+#profilepage{
+    height: 700px;
+    background-color: white;
+    margin-top: 0px;
+}
+
+#projectspage{
+  height: 2350px;
+  background-color:rgba(255,125,0,0.8);
+}
+
+#peoplepage{
+  height: 800px;
+  background-color:rgba(255,125,0,0.6);
+}
+
+#publicationspage{
+  height: 1000px;
+  background-color:rgba(255,125,0,0.4);
+}
+
 
 .col_4_people{
     display: inline-block;
