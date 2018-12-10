@@ -1,5 +1,3 @@
-<style>
-
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
 
 html {
@@ -39,7 +37,7 @@ footer {
 }
 
 body {
-	font-family: "Gill Sans", sans-serif;
+  font-family: "Gill Sans", sans-serif;
     color: #000000;
 
 }
@@ -53,23 +51,23 @@ a {
     text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
   text-align: center;
   color: orange;
 }
 
 nav{
-	float:right;
-	padding-right: 15px;
-	padding-top: 15px;
+  float:right;
+  padding-right: 15px;
+  padding-top: 15px;
     z-index: 0;
 }
 header img{
-	max-width: 30%;
-	max-height: 110px;
-	margin-left:40px;
-	margin-top: 15px;
-	padding-top: 5px;
+  max-width: 30%;
+  max-height: 110px;
+  margin-left:40px;
+  margin-top: 15px;
+  padding-top: 5px;
     margin-bottom: 15px;
     padding-bottom: 3px;
     position: absolute;
@@ -224,11 +222,11 @@ h2.ampedfooter {
 }
 
 h2.description {
-	padding: 1%;
-	color: white;
-	font-weight: lighter;
-	font-size: 1.6em;
-	text-align: center;
+  padding: 1%;
+  color: rgba(255, 90, 40, 1.0);
+  font-weight: lighter;
+  font-size: 1.6em;
+  text-align: center;
 }
 
 h3.about {
@@ -320,7 +318,7 @@ footer h2.titles{
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 25%;
-    background-color: rgba(255, 90, 40, 1.0);
+    background-color: white;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -349,7 +347,7 @@ footer h2.titles{
 
 .thumb:hover .mask h2
 .thumb:hover .mask a {
-    opacity: 1;
+    opacity: 0.8;
     transform: scale(1);
     text-orientation: center;
     color: white;
@@ -368,11 +366,11 @@ footer h2.titles{
 
 .thumb:hover img {
     transform: scale(1.1);
-    opacity: 1.2;
+    opacity: 0.8;
 }
 
 img.grid_4{
-	margin: 0px;
+  margin: 0px;
 }
 ul#menu li {
     display:inline;
@@ -409,7 +407,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-	/*hover over nav links styles here*/
+  /*hover over nav links styles here*/
 }
 
 /* hide sublists be default */
@@ -455,7 +453,7 @@ nav ul li:hover > ul li:hover {
 }*/
 
 *{
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .logo{
@@ -468,29 +466,29 @@ nav ul li:hover > ul li:hover {
 }
 
 .wrapper{
-	width:96%;
-	margin:0 2%;
+  width:96%;
+  margin:0 2%;
 
 }
 
 .col_3{
-	display: inline-block;
-	width:31.6%;
-	margin-left: 0.5%;
-	margin-right:0.5%;
-	margin-bottom: 1.2%;
+  display: inline-block;
+  width:31.6%;
+  margin-left: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 1.2%;
     margin-top: 0%;
     position: relative;
     z-index: 0;
 }
 
 .col_2{
-	display: inline-block;
-	width:48.4%;
-	margin-left: 0.5%;
-	margin-right:0.5%;
-	margin-bottom: 0.5%;
-	margin-top: 0%;
+  display: inline-block;
+  width:48.4%;
+  margin-left: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 0.5%;
+  margin-top: 0%;
 }
 
 .col_2_about{
@@ -512,14 +510,14 @@ nav ul li:hover > ul li:hover {
 }
 
 .col_4{
-    display: inline-block;
-	width:23.6%;
-	margin-left: 0.5%;
-	margin-right:0.5%;
-	margin-bottom: 1.2%;
-    margin-top: 3%;
-    position: relative;
-    z-index: 0;
+  display: inline-block;
+  width:23.6%;
+  margin-left: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 1.2%;
+  margin-top: 3%;
+  position: relative;
+  z-index: 0;
 }
 
 .col_4_people{
@@ -560,12 +558,12 @@ nav ul li:hover > ul li:hover {
 }
 
 .col_1{
-	display: inline-block;
-	width:98.5%;
-	margin-left: 0.5%;
-	margin-right:0.5%;
-	margin-bottom: 0%;
-	margin-top: 0%;
+  display: inline-block;
+  width:98.5%;
+  margin-left: 0.5%;
+  margin-right:0.5%;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 
 .col_1_video{
@@ -597,17 +595,21 @@ nav ul li:hover > ul li:hover {
 
 }
     
-*/}
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
 
-  body {
+ body {
     font-family: Gill Sans, sans-serif;
     color: #000000;
     font-weight: normal;
 
-  }
+    }
+
+  body h1 {
+      font-family: Gill Sans, sans-serif;
+      font-weight: normal;
+    }
 
   .col_4{
   display: inline-block;
@@ -620,36 +622,233 @@ nav ul li:hover > ul li:hover {
   z-index: 0;
 }
 
-
 .thumb .mask a {
 
     width:100%;
     height: 200%;
-    display:block;
+    display: block;
     text-decoration: none;
-    padding-top: 60%;
-    padding-bottom: 15%;
-    position: center;
+    text-align: center;
+    /*padding-top: 25%;
+    padding-bottom: 25%;*/
 }
+
 .mask {
     position: absolute;
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 30%;
-    background-color: rgba(246, 135, 40, 1.0);
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 20%;
+    background-color: white;
     height: 100%;
     width: 100%;
     opacity: 0;
     transition: all 1s ease;
-}*/
+}
+
+  nav ul a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 15px;
+    font-size:16px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+img.profile2 {
+  width: 64%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+img.profile{
+  width: 45%;
+  margin-right: 2%;
+  margin-left: 2%;
+/*  padding-right: 5%;
+  padding-left: 5%;*/
+  display: inline;
+  position: center;
+  margin-bottom: 0%;
+/*  margin-top: 1%;*/
+}
+
+.logo{
+  width: 250%;
+/*  height: 200%;*/
+  position: absolute;
+  display: inline;
 
 }
 
-/* All Mobile Sizes */
-/*@media only screen and (max-width: 767px) {}*/
+nav{
+  float:right;
+  position: right;
+  margin-top: 10px;
+  width: 80%;
+  margin-left: 15%;
+  margin-right: 3%;
+  margin-bottom: 0px;
+
+}
+
+/*responsive nav bar*/
+nav ul {
+    list-style-type: none;
+    position: relative;
+/*    z-index: 1;*/
+}
+
+/* make the a tags display like block elements to take up full space of container li*/
+nav ul a {
+    text-align: right;
+    display: inline block;
+    position: center;
+    color: #222;
+    text-decoration: none;
+/*    line-height: 10px;*/
+/*    padding: 15px;
+*/    font-size:1.2em;
+    padding-right: 1px;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-align: right;
+  color: orange;
+}
+
+footer a{
+    color: black;
+    position: absolute;
+    display: inline;
+    z-index: 1;
+    font-size: 14px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/*img.profile2 {
+  width: 96%;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+}*/
+.profile{
+  width: 35%;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: inline-block;
+  margin-bottom: 0%;
+  float: right;
+  margin-top: 3%;
+}
+
+.text{
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+/*  position: center;*/
+  text-align: left;
+  display: inline-block;
+  color:black;
+
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 3%;
+}
+
+.image_right{
+  float: right;
+  width: 27%;
+  margin-right: 10%;
+  margin-left: 2%;
+  display: inline-block;
+  margin-bottom: 0%;
+  margin-top: 5%;
+
+}
+
+.text_left{
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+  margin-right: 2%;
+  position: center;
+  text-align: left;
+  color:black;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.image_left{
+  float: left;
+  width: 27%;
+  margin-right: 2%;
+  margin-left: 10%;
+  display: inline-block;
+  margin-bottom: 0%;
+  margin-top: 5%;
+}
+
+.text_right{
+  float: right;
+  width: 40%;
+  margin-left: 2%;
+  margin-right: 10%;
+  position: center;
+  text-align: left;
+  color:black;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#profilepage{
+    height: 550px;
+    background-color: white;
+    margin-top: 0px;
+    margin: 0px;
+}
+
+#projectspage{
+  height: 1775px;
+  background-color:rgba(255,125,0,0.8);
+}
+
+#peoplepage{
+  height: 1275px;
+  background-color:white;
+}
+
+#publicationspage{
+  height: 1000px;
+  background-color:rgba(255,125,0,0.8);
+}
+
+.col_4_people{
+    display: inline-block;
+  width:40.0%;
+  margin-left: 5.9%;
+  margin-right:0%;
+  margin-bottom: 1.2%;
+    margin-top: 3%;
+    position: relative;
+    z-index: 0;
 
 
+}
+
+}
 
 
 
@@ -696,7 +895,7 @@ nav ul li:hover > ul li:hover {
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 20%;
-    background-color: rgba(246, 135, 40, 1.0);
+    background-color: white;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -723,45 +922,30 @@ img.profile2 {
   margin-bottom: 0%;
 }
 img.profile{
-  width: 32%;
-  padding-right: 2%;
-  padding-left: 2%;
-  display: inline-block;
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+/*  padding-right: 5%;
+  padding-left: 5%;*/
+  display: inline;
+  position: center;
   margin-bottom: 0%;
 }
 
 .logo{
   width: 250%;
-
 /*  height: 200%;*/
   position: absolute;
   display: inline;
 
 }
 
-/*nav.navbar{
-  display: inline-block;
-  width: 80%
-  padding-right: 10%;
-  padding-top: 10%;
-    z-index: 0;
-}
-
-/*responsive nav bar*/
-/*nav ul {
-    list-style-type: none;
-    position: relative;
-    display: inline-block;
-    margin:0;
-    line-height: 80px;
-    z-index: 1;
-}*/
-
 nav{
-  float:left;
-  margin-top: 90px;
-  width: 94%;
-  margin-left: 3%;
+  float:right;
+  position: right;
+  margin-top: 10px;
+  width: 80%;
+  margin-left: 15%;
   margin-right: 3%;
   margin-bottom: 0px;
 
@@ -771,19 +955,28 @@ nav{
 nav ul {
     list-style-type: none;
     position: relative;
-    z-index: 1;
+/*    z-index: 1;*/
 }
 
 /* make the a tags display like block elements to take up full space of container li*/
 nav ul a {
+    text-align: right;
     display: inline block;
+    position: center;
     color: #222;
     text-decoration: none;
 /*    line-height: 10px;*/
 /*    padding: 15px;
-*/    font-size: 1em;
+*/    font-size:1em;
     padding-right: 1px;
 }
+
+a:hover {
+  text-decoration: underline;
+  text-align: right;
+  color: orange;
+}
+
 footer a{
     color: black;
     position: absolute;
@@ -794,18 +987,12 @@ footer a{
     padding-left: 0px;
 }
 
-/*img.profile2 {
-  width: 96%;
-  padding-right: 2%;
-  padding-left: 2%;
-  display: inline-block;
-  margin-bottom: 0%;
-}*/
+
   .profile{
-  width: 90%;
-  padding-right: 5%;
-  padding-left: 5%;
-  display: inline-block;
+/*  width: 50%;
+*//*  padding-right: 5%;
+  padding-left: 5%;*/
+/*  display: inline;*/
   margin-bottom: 0%;
   margin-top: 0%;
 }
@@ -818,7 +1005,7 @@ footer a{
   display: inline-block;
   color:black;
 
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: normal;
   margin-top: 6%;
 }
@@ -836,25 +1023,76 @@ footer a{
   margin-top: 6%;
 }
 
+.image_right{
+  /*float: right;*/
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: inline-block;
+  margin-bottom: 5%;
+  margin-top: 10%;
+
+}
+
+.text_left{
+  /*float: left;*/
+/*  position: center;*/
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: center;
+  text-align: left;
+  color:black;
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.image_left{
+/*  float: left;*/
+  width: 90%;
+  margin-right: 2%;
+  margin-left: 5%;
+  display: inline-block;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+.text_right{
+/*  float: right;*/
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: center;
+  text-align: left;
+  color:black;
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
 #profilepage{
-    height: 700px;
+    height: 780px;
     background-color: white;
     margin-top: 0px;
+    margin: 0px;
 }
 
 #projectspage{
-  height: 2350px;
+  height: 1450px;
   background-color:rgba(255,125,0,0.8);
 }
 
 #peoplepage{
-  height: 800px;
-  background-color:rgba(255,125,0,0.6);
+  height: 1100px;
+  background-color:white;
 }
 
 #publicationspage{
   height: 1000px;
-  background-color:rgba(255,125,0,0.4);
+  background-color:rgba(255,125,0,0.8);
 }
 
 .col_4_people{
@@ -866,6 +1104,8 @@ footer a{
     margin-top: 3%;
     position: relative;
     z-index: 0;
+
+
 }
 
 }
@@ -906,7 +1146,7 @@ footer a{
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 25%;
-    background-color: rgba(246, 135, 40, 1.0);
+    background-color: white;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -929,6 +1169,10 @@ footer a{
   text-align: center;
 }
 
+.description h2{
+  color: rgba(255, 90, 40, 1.0);
+}
+
 /*  nav ul a {
     display: block;
     color: #222;
@@ -946,7 +1190,8 @@ footer a{
 
 /*  height: 200%;*/
   position: absolute;
-  display: inline;
+  display: inline-block;
+  float: right;
 
 }
 
@@ -969,7 +1214,8 @@ footer a{
 }*/
 
 nav{
-  float:left;
+  float:center;
+    position: center;
   margin-top: 90px;
   width: 94%;
   margin-left: 3%;
@@ -988,6 +1234,7 @@ nav ul {
 /* make the a tags display like block elements to take up full space of container li*/
 nav ul a {
     display: inline block;
+    position: center;
     color: #222;
     text-decoration: none;
 /*    line-height: 10px;*/
@@ -1019,6 +1266,17 @@ footer a{
   display: inline-block;
   margin-bottom: 0%;
   margin-top: 0%;
+}
+
+img.profile{
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+/*  padding-right: 5%;
+  padding-left: 5%;*/
+  display: inline;
+  position: center;
+  margin-bottom: 0%;
 }
 
 .text{
@@ -1098,13 +1356,13 @@ footer a{
 }
 
 #profilepage{
-    height: 700px;
+    height: 725px;
     background-color: white;
     margin-top: 0px;
 }
 
 #projectspage{
-  height: 2350px;
+  height: 2375px;
   background-color:rgba(255,125,0,0.8);
 }
 
@@ -1141,5 +1399,3 @@ h2.ampedfooter {
 }
 
 }
-
-</style>
